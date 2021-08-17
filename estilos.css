@@ -21,7 +21,7 @@ header{
     margin-left: 10%;
     margin-right: 10%;
     
-    background-image: linear-gradient(rgb(239, 190, 252, 0%), rgb(212, 55, 255, 100%)), url("/img/game.jpg");
+    background-image: linear-gradient(rgb(239, 190, 252, 0%), rgb(212, 55, 255, 100%)), url("img/game.jpg");
     background-size:cover;
     color: white;
     text-align: center;
@@ -79,7 +79,7 @@ nav ul li{
 #perfil{
     border: 1px solid black;
     border-radius: 100px;
-    background-image: url("/img/fondoP.jpg");
+    background-image: url(/img/fondoP.jpg");
     background-size: cover;
     float: left;
     margin-right: 20px;
