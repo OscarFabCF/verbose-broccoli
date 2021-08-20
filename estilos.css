@@ -9,20 +9,22 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-color: whitesmoke;
-    background-color: #85FFBD;
-    background: whitesmoke;
+    background-image: url("/img/fondoP.jpg");
 }
 
 header{
     margin-top: 30px;
-    height: 400px;
+    height: 500px;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     
     background-image: linear-gradient(rgb(239, 190, 252, 0%), rgb(212, 55, 255, 100%)), url("/img/game.jpg");
-    background-size:cover;
     color: white;
     text-align: center;
     padding-top: 150px;
@@ -73,7 +75,8 @@ nav ul li{
     color: black;
     border-radius: 20px;
     padding: 20px;
-    min-height: 250px;
+    min-height: 450px;
+    padding-top: 125px;
 }
 
 #perfil{
@@ -85,47 +88,32 @@ nav ul li{
     margin-right: 20px;
 }
 
+
 .Habilidades{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    background-color: #85FFBD;
-    background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: (80px, auto);
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 15px;
+    background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
     border-radius: 20px;
-    padding: 30px;
-    align-items: center;
+    text-align: justify;
+    padding: 15px;
     height: auto;
 }
 
 .logo{
-    height: 50vh;
+    height: 30vh;
     margin-left: 50px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-#html{
-    width: 400px;
-    float: left;
-    margin-right: 100px;
-    text-align: justify;
-}
-
-#css{
-    width: 400px;
-    float: left;
-    text-align: justify;
-}
-
-#js{
-    text-align: justify;
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-bottom: 20px;
 }
 
 .Portafolio{
@@ -147,6 +135,7 @@ nav ul li{
 }
 
 footer{
+    font-size: 10px;
     height: auto;
     margin-top: 15px;
     margin-left: 10%;
@@ -160,4 +149,40 @@ footer{
 .icon{
     width: 10vh;
     padding-right: 20px;
+}
+
+@media screen and (max-width: 800px){
+
+    nav ul li{
+        font-size: 15px;
+        float: left;
+        list-style: none;
+        margin: 5px;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    header{
+        font-size: 20px;
+    }
+
+    .Inicio{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .Habilidades{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: (80px, auto);
+        padding: 20px;
+    }
+
+    .icon{
+        width: 7vh;
+    }
+
+    footer{
+        height: auto;
+        padding: 5px
+    }
 }
